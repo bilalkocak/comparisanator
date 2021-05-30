@@ -1,0 +1,99 @@
+@import "./src/style/colors";
+
+.player-container {
+
+  margin: 20px;
+
+
+  .player-basic-info {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+    .player-left {
+      display: flex;
+      width: 60%;
+      align-items: center;
+
+      .player-photo-container {
+        position: relative;
+
+        .player-photo {
+          width: 150px;
+          margin-right: 20px;
+          border-radius: 100%;
+          height: 150px;
+        }
+
+        .fav-button {
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+          width: 40px;
+        }
+      }
+
+      .Goalkeeper {
+        border: 3px solid $goalkeeperColor;
+      }
+
+      .Defender {
+        border: 3px solid $defenceColor;
+      }
+
+      .Midfielder {
+        border: 3px solid $midColor;
+      }
+
+      .Forward {
+        border: 3px solid $attackColor;
+      }
+
+      .player-flag-area {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+
+        img {
+          width: 20px;
+        }
+      }
+    }
+
+    .player-right {
+      display: flex;
+      align-items: center;
+      width: 30%;
+      justify-content: space-between;
+    }
+  }
+
+  .player-detail-container {
+    height: 400px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .stat-group {
+      ul {
+        li {
+          list-style: none;
+          display: flex;
+          width: 200px;
+          justify-content: space-between;
+          font-weight: 500;
+
+          span:first-child {
+            color: $statTitle
+          }
+
+          span:last-child {
+            color: $statResult
+          }
+        }
+      }
+    }
+  }
+}
